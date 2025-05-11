@@ -1,0 +1,16 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "wrangler-cloudflare-playwright",
+	"main": "src/index.ts",
+	"workers_dev": true,
+	"compatibility_flags": ["nodejs_compat_v2"],
+	"compatibility_date": "2025-06-30",
+	"upload_source_maps": true,
+	"browser": {
+	  "binding": "MYBROWSER"
+	},
+}
